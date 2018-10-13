@@ -139,6 +139,13 @@ ioctl(fd,FW_GET_LOG_LEN,&logLen);
 Log *logs;
 ioctl(fd,FW_WRITE_LOG,logs);
 ```
+## How to use
+> First you need to be in the directory of MarsFireWallKernel.c
+```C++
+# make
+# insmod MarsFireWallKernel
+# mknod MarsFireWall c 250 0
+```
 ## Technical details
 Coming soon
 ## Contact me
